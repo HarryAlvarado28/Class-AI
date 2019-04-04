@@ -1,51 +1,38 @@
-# sony-computing-machine :collision:
-
-# Laboratorio 1 :metal:
+# Laboratorio 1 :cyclone: :metal:
 
 Para ver correr este programa (lab1) debes ejecutar estos comandos:
 
 Debes de tener Python 3.5+ instalado. :zap:
 
-Instala el entorno virtual de Python (si no lo tienes):
+## Configuración del entorno
 
-`pip install virtualenv`
+```shell
+pip3 install virtualenv  #Instala el entorno virtual de Python (si no lo tienes)
 
-Prepara el entorno virtual:
+virtualenv -p python3 env  #Prepara el entorno virtual
 
-`virtualenv -p python3 env`
+source env/bin/activate   #Activa el entorno
 
-Activa el entorno:
+pip3 install gym-retro    #Instala GYM-Retro
 
-`source env/bin/activate`
-
-Instala GYM-Retro:
-
-`pip3 install gym-retro`
-
-Importa del roms el archivo de Sonic:
-
-`python3 -m retro.import roms`
+python3 -m retro.import roms    #Importa del roms el archivo de Sonic
+```
 
 Ya puedes ejecutar Sonic:
+```shell
+python sonic.py   #Ejecutando Sonic
+```
 
-`python sonic.py`
-
-### Más Rápido
-
-Sección de plus, se a creado un script con toda la instalación del los pasos anteriores *skip_lol.sh*::
-
-`source skip_lol.sh`
-
-y luego ejecutar Sonic:
-
-`python sonic.py`
-
-## Curioso
+## Recuerda
 
 Recuerda que si terminas la sesion de la terminal donde ejecutastes sonyc, el entorno no habras desactivado, para esto debes de ejecutar nuevamente:
 
-`source env/bin/activate`
+```shell
+source env/bin/activate
+```
 
 y luego ejecutas Sonic:
 
-`python sonic.py`
+```shell
+python sonic.py
+```
