@@ -28,7 +28,11 @@ python sonic.py   #Ejecutando Sonic
 Recuerda que si terminas la sesion de la terminal donde ejecutastes sonyc, el entorno no habras desactivado, para esto debes de ejecutar nuevamente:
 
 ```shell
-source env/bin/activate
+source env/bin/activate   #Activa el entorno
+
+pip3 install gym-retro    #Instala GYM-Retro
+
+python3 -m retro.import roms    #Importa del roms el archivo de Sonic
 ```
 
 y luego ejecutas Sonic:
@@ -36,3 +40,26 @@ y luego ejecutas Sonic:
 ```shell
 python sonic.py
 ```
+
+## Instrucciones Originales
+
+### Procedimiento de instalación:
+
+- 1. Creen una carpeta llamada lab_1 y dentro de ella ejecutar:
+```shell
+virtualenv -p python3 env
+
+source env/bin/activate
+
+pip3 install gym-retro
+```
+- 2. Creen una carpeta llamada roms dentro de lab_1 y colocar el archivo md de sonic. Ejecutar:
+```shell
+python3 -m retro.import roms
+```
+
+- 3. Colocar el archivo controlador dentro de la carpeta lab_1, y ejecutar:
+```shell
+python sonic.py
+```
+**Si sonic se mueve, entonces ya funciona.**

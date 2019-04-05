@@ -1,2 +1,6 @@
 # sony-computing-machine
-Pruebas
+
+## Materia de Inteligencia Artificial :fire:
+
+#### Conceptos y Temas:
+- OpenAI - gym

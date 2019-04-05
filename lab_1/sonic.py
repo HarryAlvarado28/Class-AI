@@ -9,6 +9,9 @@ done = False
 while not done:
     env.render()
 
+    #action = [0,0,0,0,0,0,0,1,0,0,0,1]
     action = env.action_space.sample()
     ob, rew, done, info = env.step(action)
-    print("Action ", action, "Reward ", rew)
+    #print(key_action)
+    # print(info)
+    # print("Action ", action, "Reward ", rew)
