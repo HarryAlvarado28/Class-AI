@@ -15,7 +15,7 @@ import pyglet
 from pyglet import gl
 from pyglet.window import key as keycodes
 
-
+#
 class Interactive(abc.ABC):
     """
     Base class for making gym environments interactive for human use
@@ -123,8 +123,8 @@ class Interactive(abc.ABC):
                 print("Action ", [int(var2) for var2 in var1], "Reward ", rew)
                 self._image = self.get_image(obs, self._env)
                 self._episode_returns += rew
-                self._steps += 1
-                self._episode_steps += 1
+                self._steps += 0
+                self._episode_steps += 0
                 np.set_printoptions(precision=2)
                 if self._sync:
                     done_int = int(done)  # shorter than printing True/False
@@ -193,7 +193,7 @@ class Interactive(abc.ABC):
             prev_frame_time = now
             self._draw()
             self._win.flip()
-
+#
 
 class RetroInteractive(Interactive):
     """
@@ -201,6 +201,8 @@ class RetroInteractive(Interactive):
     """
     def __init__(self, game, state, scenario):
         env = retro.make(game=game, state=state, scenario=scenario)
+        # env = retro.make('SonicTheHedgehog-Genesis', state=state, scenario=scenario)
+
         self._buttons = env.buttons
         super().__init__(env=env, sync=False, tps=60, aspect_ratio=4/3)
 
@@ -238,7 +240,9 @@ class RetroInteractive(Interactive):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--game', default='SonicTheHedgehog-Genesis')
-    parser.add_argument('--state', default=retro.State.DEFAULT)
+    parser.add_argument('--state', default='GreenHillZone.Act1')
+    # parser.add_argument('--scenario', default='Act1')
+    # parser.add_argument('--state', default=retro.State.DEFAULT)
     parser.add_argument('--scenario', default=None)
     args = parser.parse_args()
 
