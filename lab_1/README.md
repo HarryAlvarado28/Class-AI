@@ -6,6 +6,8 @@ Debes de tener Python 3.5+ instalado. :zap:
 
 ## Configuración del entorno
 
+Seguir las siguientes instrucciones:
+
 ```shell
 pip3 install virtualenv  #Instala el entorno virtual de Python (si no lo tienes)
 
@@ -23,23 +25,7 @@ Ya puedes ejecutar Sonic:
 python sonic.py   #Ejecutando Sonic
 ```
 
-## Recuerda
-
-Recuerda que si terminas la sesion de la terminal donde ejecutastes sonyc, el entorno no habras desactivado, para esto debes de ejecutar nuevamente:
-
-```shell
-source env/bin/activate   #Activa el entorno
-
-pip3 install gym-retro    #Instala GYM-Retro
-
-python3 -m retro.import roms    #Importa del roms el archivo de Sonic
-```
-
-y luego ejecutas Sonic:
-
-```shell
-python sonic.py
-```
+**Si Sonic se mueve, entonces ya funciona.**
 
 ## Instrucciones Originales
 
