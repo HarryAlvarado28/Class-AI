@@ -1,6 +1,9 @@
-# sony-computing-machine
+# :smoking: Class-AI
 
-## Materia de Inteligencia Artificial :fire:
+## :fire: Materia de Inteligencia Artificial 
+
+## Objetivo del Repositorio
+- Realizar anotaciones :books: :pencil2:
 
 #### Conceptos y Temas:
-- OpenAI - gym
+- OpenAI - gym :video_game:
