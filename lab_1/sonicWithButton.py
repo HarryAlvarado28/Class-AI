@@ -120,7 +120,8 @@ class Interactive(abc.ABC):
                 obs, rew, done, _info = self._env.step(act)
                 var1 = []
                 var1 = act
-                print("Action ", [int(var2) for var2 in var1], "Reward ", rew)
+                # print("obs: ",obs,"_info: ",_info,"Action: ", [int(var2) for var2 in var1], "Reward: ", rew)
+                print([int(var2) for var2 in var1], rew, ob, done, _info)
                 self._image = self.get_image(obs, self._env)
                 self._episode_returns += rew
                 self._steps += 0
