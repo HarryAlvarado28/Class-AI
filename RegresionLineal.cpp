@@ -8,7 +8,9 @@ int main(){
 	float x[] = {2, 3, 2.5, 3.1};
 	float y[] = {3, 4, 3, 6};
 
+	printf("  X  -   Y\n");
 	for (int i=0; i<n; i++){
+		printf("%.2f - %.2f\n", x[i], y[i]);
 		xp += x[i];
 		yp += y[i];
 	}
@@ -37,13 +39,12 @@ int main(){
 
 	printf("\n---------------------------------------\n");
 
-	//do{
-	//printf("Ingrese: "); scanf("%f", &valorUsuario);
-	//entradaEjemplo = 6;
-	//resultado = a + (b * valorUsuario);
-	//resultado = a + b * entradaEjemplo;
-	//printf("resultado: %.4f", resultado);
-	//}while(!(valorUsuario == 101.0));
+	do{
+		printf("\nIngrese horas estudio (x): ");
+		scanf("%f", &valorUsuario);
+		resultado = a + (b * valorUsuario);
+		printf("resultado de y: %.4f", resultado);
+	}while(valorUsuario != 0);
 
 	return 0;
 }
