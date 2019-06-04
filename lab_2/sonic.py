@@ -7,6 +7,17 @@ env.reset()
 
 done = False
 
+
+
+while not done:
+    env.render()
+    action = mt()
+    ob, rew, done, info = env.step(action)
+    if info['screen_x_end'] < (info['screen_x'] + 3):
+        env.reset()
+        pass
+    print("Action ", action, "Reward ", rew)
+
 def mt():
     # q0 - Corre al Frente
     action = [0,0,0,0,0,0,0,1,0,0,0,0]
@@ -17,15 +28,6 @@ def mt():
         #q2 - Corre atrás y Salta
         action = [1,0,0,0,0,0,1,0,0,0,0,0]
     return action
-
-while not done:
-    env.render()
-    action = mt()
-    ob, rew, done, info = env.step(action)
-    if info['screen_x_end'] < (info['screen_x'] + 3):
-        env.reset()
-        pass
-    print("Action ", action, "Reward ", rew)
 
 """
 action = [0,0,0,0,0,0,0,0,0,0,0,0]
