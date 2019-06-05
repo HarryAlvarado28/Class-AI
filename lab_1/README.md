@@ -1,37 +1,32 @@
 # Laboratorio 1 :cyclone: :metal:
 
-Para ver correr este programa (lab1) debes ejecutar estos comandos:
+## Sonic corriendo
 
-Debes de tener Python 3.5+ instalado. :zap:
+_**IMPORTANTE Seguir los pasos del [README Principal](https://github.com/HarryAlvarado28/Class-AI).**_
 
-## Configuración del entorno
+Si ya tienes el entorno activo, Ya puedes ejecutar Sonic
 
-Seguir las siguientes instrucciones:
-
-```shell
-pip3 install virtualenv  #Instala el entorno virtual de Python (si no lo tienes)
-
-virtualenv -p python3 env  #Prepara el entorno virtual
-
-source env/bin/activate   #Activa el entorno
-
-pip3 install gym-retro    #Instala GYM-Retro
-
-python3 -m retro.import roms    #Importa del roms el archivo de Sonic
+```console
+python3 sonic.py                # Ejecutando Sonic
 ```
 
-Ya puedes ejecutar Sonic:
+De lo contrario activa el entorno y ejecuta a Sonic
+
 ```shell
-python sonic.py   #Ejecutando Sonic
+source env-classai/bin/activate # Activa el entorno
+
+python3 sonic.py                # Ejecutando Sonic
 ```
 
 **Si Sonic se mueve, entonces ya funciona.**
 
-## Instrucciones Originales
+_**No es necesario si has siguido los pasos del [README Principal](https://github.com/HarryAlvarado28/Class-AI).**_
 
-### Procedimiento de instalación:
+**Instrucciones Originales**
 
-- 1. Creen una carpeta llamada lab_1 y dentro de ella ejecutar:
+Procedimiento de instalación:
+
+1. Creen una carpeta llamada lab_1 y dentro de ella ejecutar:
 ```shell
 virtualenv -p python3 env
 
@@ -39,13 +34,13 @@ source env/bin/activate
 
 pip3 install gym-retro
 ```
-- 2. Creen una carpeta llamada roms dentro de lab_1 y colocar el archivo md de sonic. Ejecutar:
+2. Creen una carpeta llamada roms dentro de lab_1 y colocar el archivo md de sonic. Ejecutar:
 ```shell
 python3 -m retro.import roms
 ```
 
-- 3. Colocar el archivo controlador dentro de la carpeta lab_1, y ejecutar:
-```shell
-python sonic.py
+3. Colocar el archivo controlador dentro de la carpeta lab_1, y ejecutar:
+```console
+python3 sonic.py
 ```
 **Si sonic se mueve, entonces ya funciona.**
