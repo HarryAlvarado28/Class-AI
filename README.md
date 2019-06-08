@@ -39,6 +39,10 @@ _**Otras dependencias instaladas en el repositorios.**_
 ```console
 pip3 install pygame
 pip3 install matplotlib
+pip3 install keras                # Ya no deberíamos usarlo, pero bueno hay esta.
+pip3 install scikit-image
+pip3 install tensorflow
+pip3 install sklearn
 ```
 
 :+1: este es el fin......
