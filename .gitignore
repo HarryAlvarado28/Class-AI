@@ -3,3 +3,4 @@ env-classai/
 dataSonic.csv
 */py_test.py
 .vscode
+*env*
